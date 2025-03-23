@@ -412,7 +412,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "goad-toolkit", specifier = ">=0.1.3" },
+    { name = "goad-toolkit", specifier = ">=0.1.4" },
     { name = "jupyter", specifier = ">=1.1.1" },
 ]
 
@@ -426,7 +426,7 @@ dev = [
 
 [[package]]
 name = "goad-toolkit"
-version = "0.1.3"
+version = "0.1.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "loguru" },
@@ -440,7 +440,7 @@ dependencies = [
     { name = "tqdm" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/69/32/31259e54944d36ea9f2ced2adf26e2eb5a44de57665a6af052772253a12b/goad_toolkit-0.1.3-py3-none-any.whl", hash = "sha256:cb015f6c3c5ad8f5b8183525fa6357236117f7fa88d9e86c6e762426c6bc07fa", size = 17796 },
+    { url = "https://files.pythonhosted.org/packages/e5/f5/f3ec1794b9bae6c61851892e5ef4defc901d29c57b7f9081b8a8f1615909/goad_toolkit-0.1.4-py3-none-any.whl", hash = "sha256:ae826176db4f346cee060389c1e995394afa78a6be83897bc1e84d97499bccf9", size = 17881 },
 ]
 
 [[package]]
