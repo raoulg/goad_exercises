@@ -1,0 +1,18 @@
+[project]
+name = "goad-excercises"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "goad-toolkit",
+    "jupyter>=1.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "isort>=6.0.1",
+    "notebooktester>=0.2.1",
+    "pyright>=1.1.397",
+    "ruff>=0.11.2",
+]
