@@ -15,6 +15,3 @@ The notebook should help you with creating your own improved model.
 After you have tested your model, create a `main.py` script that follows the same structure as the `linear.py` script in the demo folder.
 You should be able to run the `main.py` script, and it should run your whole pipeline from data loading and preprocessing to model evaluation.
 
-
-
-
