@@ -1,0 +1,22 @@
+pre-commit:
+  commands:
+    format:
+      files: git ls-files
+      glob: '*.{py, ipynb}'
+      run: ruff format {staged_files}
+      stage_fixed: true
+    clean-jupyter:
+      files: git ls-files
+      glob: '*.ipynb'
+      run: jupyter nbconvert --clear-output --inplace {staged_files}
+      stage_fixed: true
+    check:
+      files: git ls-files
+      glob: '*.py'
+      run: ruff check {staged_files} --fix
+    pyright:
+      files: git ls-files
+      glob: '*.py'
+      run: pyright {staged_files}
+    notebooktester:
+      run: notebooktester notebooks -t 200
