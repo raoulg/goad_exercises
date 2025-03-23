@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "goad-toolkit",
+    "goad-toolkit>=0.1.4",
     "jupyter>=1.1.1",
 ]
 
