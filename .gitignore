@@ -11,3 +11,4 @@ wheels/
 data/**
 .notebookcache
 logs/
+.DS_Store
