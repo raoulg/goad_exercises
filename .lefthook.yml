@@ -19,4 +19,5 @@ pre-commit:
       glob: '*.py'
       run: pyright {staged_files}
     notebooktester:
-      run: notebooktester notebooks -t 200
+      glob: '*.ipynb'
+      run: notebooktester notebooks -v -t 200
