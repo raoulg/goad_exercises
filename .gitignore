@@ -13,3 +13,4 @@ data/**
 logs/
 .DS_Store
 dev/
+.cache/
