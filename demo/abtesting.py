@@ -5,6 +5,7 @@ from pathlib import Path
 from tabulate import tabulate
 from loguru import logger
 from pydantic import BaseModel
+import random
 
 
 class Config(BaseModel):
@@ -262,22 +263,19 @@ if __name__ == "__main__":
     # Initialize campaign manager
     campaign_manager = CampaignManager(config)
 
-    # Test the API
     # Try a strategy
-    strategy = 0
-    logger.info(f"Testing strategy {strategy}")
     result = None
-    for i in range(30):
+    for i in range(5):
+        strategy = random.randint(0, 3)
         result = campaign_manager.evaluate_strategy(strategy)
-
-    if result is not None:
-        print(
-            f"Strategy {strategy} result: {'Opened' if result == 1 else 'Not Opened'}"
-        )
-    else:
-        print(
-            f"Unable to evaluate strategy {strategy} due to rate limiting or other error"
-        )
+        if result is not None:
+            print(
+                f"Strategy {strategy} result: {'Opened' if result == 1 else 'Not Opened'}"
+            )
+        else:
+            print(
+                f"Unable to evaluate strategy {strategy} due to rate limiting or other error"
+            )
 
     # Get remaining attempts
     remaining = campaign_manager.query_api.get_remaining()
