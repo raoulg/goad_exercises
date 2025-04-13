@@ -190,6 +190,8 @@ class FileHandler:
 
         # Create results file with headers if it doesn't exist
         if not self.results_file.exists():
+            parent_dir = self.results_file.parent
+            parent_dir.mkdir(parents=True, exist_ok=True)
             self._create_results_file()
 
     def _create_results_file(self):
