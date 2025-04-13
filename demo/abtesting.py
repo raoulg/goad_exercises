@@ -204,7 +204,6 @@ class FileHandler:
 
         # Append to CSV without writing headers again
         df_row.to_csv(self.results_file, mode="a", header=False, index=False)
-        logger.success(f"Stored result to {self.results_file}")
         return result
 
     def load_results(self):
@@ -270,12 +269,13 @@ if __name__ == "__main__":
         result = campaign_manager.evaluate_strategy(strategy)
         if result is not None:
             print(
-                f"Strategy {strategy} result: {'Opened' if result == 1 else 'Not Opened'}"
+                f"Test {i} - randomly picked strategy {strategy}\n result: Email was {'Opened' if result == 1 else 'Not Opened'}"
             )
         else:
             print(
                 f"Unable to evaluate strategy {strategy} due to rate limiting or other error"
             )
+    logger.info(f"results are stored in {campaign_manager.file_handler.results_file}")
 
     # Get remaining attempts
     remaining = campaign_manager.query_api.get_remaining()
