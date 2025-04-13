@@ -34,7 +34,10 @@ I created a podcast from the notebooks 02-05. You can listen to it [here](https:
 It will help you understand the notebooks, so its a good idea to listen to it before starting the challenge.
 
 ## 📖 The Storyline
-<img src="abtesting.png" height="600" width="500" alt="abtesting.png">
+<div align="center">
+  <img src="abtesting.png" height="600" width="500" alt="abtesting.png">
+</div>
+
 
 Our creative team has developed four distinct email strategies (let's call them Strategy 0, 1, 2, and 3) to promote a new product. We know *some* strategies will perform better than others (i.e., lead to more email opens), but we don't know which ones or by how much.
 
