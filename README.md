@@ -134,7 +134,7 @@ Top Users by Total Requests:
 **Breakdown:**
 
 1.  **Test Results:**
-    * `Test X - randomly picked strategy Y`: Shows which test run (0-4 in this case) and which strategy was *randomly* chosen by the demo script.
+    * `Test X - randomly picked strategy Y`: Shows which test run (0-4 in this case) and which strategy was *randomly* chosen by the demo script. It is your task to change this from random picking to the thompson algorithm!
     * `result: Email was Opened/Not Opened`: Tells you the outcome of that specific test.
 
 2.  **Log Message:**
