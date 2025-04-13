@@ -34,6 +34,7 @@ I created a podcast from the notebooks 02-05. You can listen to it [here](https:
 It will help you understand the notebooks, so its a good idea to listen to it before starting the challenge.
 
 ## 📖 The Storyline
+![abtesting](abtesting.png)
 
 Our creative team has developed four distinct email strategies (let's call them Strategy 0, 1, 2, and 3) to promote a new product. We know *some* strategies will perform better than others (i.e., lead to more email opens), but we don't know which ones or by how much.
 
@@ -44,10 +45,10 @@ Your task is twofold:
 
 To do this, you'll interact with a simulation server that mimics sending out emails based on the strategy you choose and reports back whether the email was opened. However, like in the real world, you have constraints!
 
-Instead of just testing each strategy an equal number of times (uniform sampling), you will implement **Thompson Sampling** (as detailed in the `05_abtesting.ipynb` notebook) to intelligently explore and exploit the different strategies.
+Instead of just testing each strategy an equal number of times (uniform sampling, which is statistically solid but you will waste resources by sending ineffective emails), you will implement **Thompson Sampling** (as detailed in the `05_abtesting.ipynb` notebook) to intelligently explore and exploit the different strategies.
 
-## 🐍 Understanding the Demo Script (`demo/abtesting.py`)
-The provided Python script (`abtesting.py`) gives you the tools to interact with the campaign server. You can run it with:
+## 🐍 Understanding the Demo Script
+The provided Python script (`demo/abtesting.py`) gives you the tools to interact with the campaign server. You can run it with:
 
 ```bash
 python demo/abtesting.py
