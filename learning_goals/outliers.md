@@ -1,0 +1,11 @@
+- The student understands what outliers may represent
+- the students can reason about traditional outlier detection methods and apply them
+- the student knows alternative approaches for non-normal data regarding outlier detection.
+- the student understands different approaches to determine a parametric distribution (both graphical and statistical) and can apply and interpret them
+- The  student understands the assumptions that are made around outliers.
+- the student can recognize common pitfalls in identifying outliers
+- The student can identify outliers and differentiate between outliers and erroneous data
+- The student can identify missing data and interpret this
+- the student can reflect on the meaning of outliers in the data, and can explain the difference between errors and picking the wrong distribution to model the data.
+- the student understands and can apply different imputation methods, and knows the potential problems
+
