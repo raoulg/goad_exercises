@@ -266,7 +266,7 @@ if __name__ == "__main__":
 
     # Try a strategy
     result = None
-    for i in range(5):
+    for i in range(30):
         strategy = random.randint(0, 3)
         result = campaign_manager.evaluate_strategy(strategy)
         if result is not None:
